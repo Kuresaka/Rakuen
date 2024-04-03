@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   font-family: 'Noto Serif SC', serif;
-  src: url('fonts/NotoSerifSC') format('opentypefont');
+  src: url('fonts/NotoSerifSC.otf') format('opentypefont');
   color: #000;
 }
 .center {
