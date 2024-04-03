@@ -151,7 +151,10 @@ html {
 }
 body {
   color: #333;
-  font-family: "PT Serif", "Times New Roman", "Noto Serif", serif;
+  font-family: "Noto Serif SC", serif;
+  font-style: normal;
+  font-weigth: 400;
+  font-variation-settings: "wdth" 100;
   margin: auto;
   padding: 0 25px;
   width: 800px;
