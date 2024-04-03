@@ -3,16 +3,9 @@ body {
   font-size: 15px;
 }
 html,
-@font-face {
-  font-family: 'Noto Serif SC', serif;
-  src: url('fonts/NotoSerifSC.otf') format('opentypefont');
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   height: 100%;
   font-family: 'Noto Serif SC', serif;
-  src: url('fonts/NotoSerifSC.otf') format('opentypefont');
   color: #000;
 }
 .center {
