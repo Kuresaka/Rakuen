@@ -3,9 +3,13 @@ body {
   font-size: 15px;
 }
 html,
+@font-face {
+  font-family: 'NotoSerifSC';
+  src: url('../fonts/NotoSerifSC-Light.woff') format('woff');
+}
 body {
   height: 100%;
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'NotoSerifSC', serif;
   color: #000;
 }
 .center {
