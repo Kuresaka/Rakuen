@@ -167,8 +167,12 @@ h1 {
   margin: 1rem 0 0.5rem;
   font-size: 24px;
 }
-main > header:first-child > h1 {
-  margin-top: 0;
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+  color: #595959;
 }
 a {
   color: #a6a6a6;
@@ -189,7 +193,7 @@ blockquote footer {
   text-align: right;
 }
 blockquote footer > *:first-child::before {
-  content: "\2014";
+  content: "\2024";
   margin-right: 0.75ch;
 }
 blockquote footer cite::before {
@@ -242,7 +246,7 @@ th {
 }
 th,
 td {
-  border: 1px solid light-colro;
+  border: 1px solid #999;
   padding: 0.5rem;
 }
 div.video-container > iframe {
