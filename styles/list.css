@@ -14,7 +14,7 @@
 }
 .theme-list li a::after {
   content: "";
-  border: 1px dashed #999;
+  border: 1px dashed #aaa9a1;
   position: absolute;
   bottom: 1ch;
   left: 0;
@@ -30,7 +30,7 @@
   gap: 0.5rem;
 }
 .posts-list span.side-info {
-  color: #999;
+  color: #aaa9a1;
   flex-shrink: 0;
 }
 .posts-list a.post-title {
