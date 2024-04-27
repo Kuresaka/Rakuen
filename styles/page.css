@@ -193,8 +193,9 @@ main header {
 }
 main header h1 {
   margin-bottom: 5px;
+  color: #ac3939;
 }
 main header div {
-  color: #aaa9a1;
-  font-size: 15px;
+  color: #afa09d;
+  font-size: 14px;
 }

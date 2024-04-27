@@ -1,7 +1,7 @@
 body > header {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 600;
-  border-bottom: 1px solid #aaa9a1;
+  border-bottom: 1px solid #afa09d;
 }
 body > header ul {
   padding: 0;
@@ -19,7 +19,7 @@ body > header ul li {
 }
 body > header ul li a {
   text-decoration: none;
-  color: #aaa9a1;
+  color: #afa09d;
 }
 .theme-list {
   margin: 0;
@@ -37,7 +37,7 @@ body > header ul li a {
 }
 .theme-list li a::after {
   content: "";
-  border: 1px dashed #aaa9a1;
+  border: 1px dashed #afa09d;
   position: absolute;
   bottom: 1ch;
   left: 0;
@@ -45,7 +45,7 @@ body > header ul li a {
   z-index: -1;
 }
 .theme-list li a span {
-  background-color: #fff;
+  background-color: #fafafa;
   padding-right: 0.5rem;
 }
 .posts-list li {
@@ -53,7 +53,7 @@ body > header ul li a {
   gap: 0.5rem;
 }
 .posts-list span.side-info {
-  color: #aaa9a1;
+  color: #afa09d;
   flex-shrink: 0;
 }
 .posts-list a.post-title {
@@ -85,7 +85,7 @@ nav.pagination {
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 1.5rem 0;
-  color: #aaa9a1;
+  color: #afa09d;
   font-size: 0.9rem;
 }
 nav.pagination span {
@@ -110,7 +110,7 @@ nav.pagination span.next a::before {
   float: right;
 }
 nav.pagination a {
-  color: #aaa9a1;
+  color: #afa09d;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -119,15 +119,15 @@ nav.pagination a::before {
   top: -1.5px;
 }
 footer {
-  color: #aaa9a1;
+  color: #afa09d;
   font-size: 0.75rem;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 5px;
 }
 footer a {
-  color: #aaa9a1;
-  text-decoration-color: #aaa9a1;
+  color: #afa09d;
+  text-decoration-color: #afa09d;
   text-decoration-thickness: 1px;
   text-underline-position: auto;
 }
@@ -166,6 +166,7 @@ body {
 h1 {
   margin: 1px 0 1px;
   font-size: 24px;
+  color: #ac3939;
 }
 h2 {
   font-size: 20px;
@@ -175,9 +176,9 @@ h3 {
   color: #595959;
 }
 a {
-  color: #b3a400;
-  text-decoration-color: #fff;
-  text-decoration-thickness: 2px;
+  color: #ac3939;
+  text-decoration-color: #fafafa;
+  text-decoration-thickness: 1px;
   text-underline-position: under;
   position: relative;
 }
@@ -185,7 +186,7 @@ blockquote {
   margin: 0;
   padding: 0 20px;
   border-style: solid;
-  border-color: #aaa9a1;
+  border-color: #afa09d;
   border-width: 0;
   border-left-width: 2px;
 }
@@ -229,7 +230,7 @@ kbd {
   margin: 0.2rem calc(0.3rem + 2px) 0 0.3rem;
   font-size: 0.8rem;
   font-family: "Cascadia Code", monospace;
-  box-shadow: 1.5px 1.5px #aaa9a1;
+  box-shadow: 1.5px 1.5px #afa09d;
   display: inline-block;
   position: relative;
   top: -1.5px;
@@ -246,7 +247,7 @@ th {
 }
 th,
 td {
-  border: 1px solid #aaa9a1;
+  border: 1px solid #afa09d;
   padding: 0.5rem;
 }
 div.video-container > iframe {
