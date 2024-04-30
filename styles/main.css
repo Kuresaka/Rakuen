@@ -21,6 +21,14 @@ body > header ul li a {
   text-decoration: none;
   color: #afa09d;
 }
+hover-text {
+  color: #000; /* 默认颜色 */
+  transition: color 0.1s; /* 可选的颜色过渡效果 */
+}
+.hover-text:hover {
+  color: #ac3939;
+/* 鼠标悬停颜色 */
+}
 .theme-list {
   margin: 0;
   padding: 0;
@@ -154,8 +162,9 @@ body {
   font-family: "Noto Serif SC", serif;
   font-style: normal;
   font-size: 16px;
-  font-weigth: 400;
+  font-weight: 400;
   font-variation-settings: "wdth" 100;
+  line-height: 1.5;
   margin: auto;
   padding: 0 25px;
   width: 800px;

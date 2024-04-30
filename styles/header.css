@@ -21,3 +21,11 @@ body > header ul li a {
   text-decoration: none;
   color: light-color;
 }
+hover-text {
+  color: #000; /* 默认颜色 */
+  transition: color 0.1s; /* 可选的颜色过渡效果 */
+}
+.hover-text:hover {
+  color: link-color;
+/* 鼠标悬停颜色 */
+}
