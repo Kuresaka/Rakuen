@@ -30,7 +30,7 @@
 
 
 
-<title>简易画廊 - KOKU - conceptual void</title>
+<title>画廊迷宫 - KOKU - conceptual void</title>
 
 <style>
     body {
@@ -80,7 +80,7 @@
     <header>
         <h1>
             
-                简易画廊
+                画廊迷宫
             
         </h1>
         <h4>
@@ -90,67 +90,48 @@
 
 
 <hr>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<style>
-  .zoomable-image {
-    cursor: zoom-in;
-  }
-  .modal {
-    display: none;
-    position: absolute;
-    z-index: 9999;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    width: 60%;
-    height: 100%;
-    border: 1px dashed #FAFAFA;
-    background-color: #FAFAFA;
-    padding: 50px;
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
-    margin-top: 0%;
-  }
+<div id="random-content" style="text-align: center;" height="200px"></div>
 
-<p></style></p>
-</head>
-<body>
- 
- 
-<p><img class="zoomable-image" id="" src="/images/lyn.gif" alt="Statue of an Angel in the City of St. Helis / 2018" onclick="zoomImage(this)" width="370px" style="float:left"> <img class="zoomable-image" id="" src="/images/Reiv.gif" alt=" ̷R̷e̷i̷v̷·̷v̷o̷n̷·̷F̷a̷u̷s̷t̷u̷s̷ Reiv·von·Rattenfänger / 2023" onclick="zoomImage(this)" width="370px" style="float:right"><br></p>
-<p><br><br><br><br><br><br><br><br></p>
-<hr>
-<div id="myModal" class="modal">
-  <span onclick="this.parentElement.style.display='none'" class="close">&times;</span>
-  <img id="enlargedImage" style="width:100%">
-  <div id="caption"></div>
-</div>
- 
 <script>
-function zoomImage(e) {
-  // Get the enlarged image and the caption
-  var img = document.getElementById("enlargedImage");
-  var modal = document.getElementById("myModal");
-  var caption = document.getElementById("caption");
-  img.src = e.src;
-  caption.innerHTML = e.alt;
-  modal.style.display = "block";
+// 文本数组
+var texts = [
+  '',
+  '',
+  ''
+];
+ 
+// 图片数组
+var images = [
+  "/images/paper.gif",
+  "/images/404.gif",
+  "/images/border.gif"
+];
+ 
+// 随机函数
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
  
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
- 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  document.getElementById("myModal").style.display = "none";
+// 显示随机内容
+function displayRandomContent() {
+  var indexText = getRandomInt(texts.length);
+  var indexImage = getRandomInt(images.length);
+  
+  var content = document.getElementById('random-content');
+  content.innerHTML = '<p>' + texts[indexText] + '</p><img src="' + images[indexImage] + '" alt="" />';
 }
+ 
+// 页面加载完成后显示随机内容
+window.onload = function() {
+  displayRandomContent();
+};
 </script>
+<p><br><br></p>
+<div style="text-align: right;"><button onclick="window.location.reload();">另一个迷宫</button></div>
+ 
 </body>
 </html>
+
 
 </main>
 
