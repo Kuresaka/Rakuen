@@ -30,7 +30,7 @@
 
 
 
-<title>画廊迷宫 - KOKU - conceptual void</title>
+<title>相簿迷宫 - KOKU - conceptual void</title>
 
 <style>
     body {
@@ -44,7 +44,7 @@
         <header>
     <nav>
         <ul>
-            <li><a href="/"><div class="hover-text">首页</div></a></li>
+            <li><a href="/"><div class="hover-text">木屋</div></a></li>
             
                 
                     <li>
@@ -66,8 +66,8 @@
                     </li>
                 
                     <li>
-                        <a href="/archives"
-                            ><span><div class="hover-text">时间索引</div></span></a
+                        <a href="/gallery"
+                            ><span><div class="hover-text">伪博物馆</div></span></a
                         >
                     </li>
                 
@@ -80,16 +80,18 @@
     <header>
         <h1>
             
-                画廊迷宫
+                相簿迷宫
             
         </h1>
         <h4>
         </h4>
     </header>
-    <p style="font-size:14px; color: grey;">格式测试中。</p>
+    <p style="font-size:14px; color: grey;">博物馆不是真实的。<br>本馆营业时间为00:00～░░░░。<br>请留意闭馆时间，切勿停留太久。——来自管理员</p>
 
 
 <hr>
+<p style="float:right"><button onclick="window.location.reload();">去往下一个迷宫</button></p>
+<br><br>
 <div id="random-content" style="text-align: center;" height="200px"></div>
 
 <script>
@@ -102,9 +104,13 @@ var texts = [
  
 // 图片数组
 var images = [
-  "/images/paper.gif",
-  "/images/404.gif",
-  "/images/border.gif"
+  "/images/Ferris-wheel.gif",
+  "/images/Tree.gif",
+  "/images/Concrete.gif",
+  "/images/Wood.gif",
+  "/images/Reed.gif",
+  "/images/Forest.gif",
+  "/images/Glass.gif"
 ];
  
 // 随机函数
@@ -127,11 +133,8 @@ window.onload = function() {
 };
 </script>
 <p><br><br></p>
-<div style="text-align: right;"><button onclick="window.location.reload();">另一个迷宫</button></div>
- 
 </body>
 </html>
-
 
 </main>
 
