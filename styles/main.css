@@ -196,6 +196,8 @@ blockquote {
   border-color: #afa09d;
   border-width: 0;
   border-left-width: 2px;
+  font-size: 14px;
+  color: #737373;
 }
 blockquote footer {
   text-align: right;
