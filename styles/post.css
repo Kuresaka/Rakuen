@@ -211,3 +211,10 @@ main header div div.post-tags {
   gap: 0 2ch;
   flex-wrap: wrap;
 }
+.image-container img {
+  transition: filter 0.2s ease;
+  filter: grayscale(100%);
+}
+.image-container:hover img {
+  filter: none;
+}

@@ -95,14 +95,13 @@
 <div id="random-content" style="text-align: center;" height="200px"></div>
 
 <script>
-// 文本数组
 var texts = [
   '',
   '',
   ''
+
 ];
  
-// 图片数组
 var images = [
   "/images/Ferris-wheel.gif",
   "/images/Tree.gif",
@@ -116,21 +115,18 @@ var images = [
   "/images/ERROR.gif"
 ];
  
-// 随机函数
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
  
-// 显示随机内容
 function displayRandomContent() {
   var indexText = getRandomInt(texts.length);
   var indexImage = getRandomInt(images.length);
   
   var content = document.getElementById('random-content');
-  content.innerHTML = '<p>' + texts[indexText] + '</p><img src="' + images[indexImage] + '" alt="" />';
+  content.innerHTML = '<p>' + texts[indexText] + '</p><img src="' + images[indexImage] + '" title="What did you see? " />';
 }
  
-// 页面加载完成后显示随机内容
 window.onload = function() {
   displayRandomContent();
 };
@@ -144,8 +140,9 @@ window.onload = function() {
         
 
         <footer>
-    <p>&copy;2024 Kuresaka</p>
-    <p>无特殊注明，本站内容均为虚构│推荐使用PC端访问</p>
+    <p>&copy;2024 Kuresaka<br>
+        无特殊注明，本站内容均为虚构，推荐使用PC端访问
+    </p>
     <p>
         Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>,
         <a target="_blank" rel="noopener" href="https://github.com/sunnybyeon/hexo-theme-dashed">Theme</a> by
