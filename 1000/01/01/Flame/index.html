@@ -25,12 +25,12 @@
 
 
     
-<link rel="stylesheet" href="/Rakuen/styles/page.css">
+<link rel="stylesheet" href="/Rakuen/styles/post.css">
 
 
 <meta name="robots" content="noindex, nofollow, noarchive">
 <body oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;"></body>
-<title>关于 - RÁKUEN</title>
+<title>Flame - RÁKUEN</title>
 
 
 <head>
@@ -83,36 +83,84 @@
     <header>
         <h1>
             
-                关于
+                Flame
             
         </h1>
-        <h4>
-        </h4>
+        <div>
+            <div class="post-categories">
+                
+            </div>
+            <div class="post-tags">
+                
+            </div>
+        </div>
     </header>
-    <p style="font-size:14px; color: grey;">「除此之外只有虚构」</p>
+    <br>
+<style>
+  .gallery {
+    position: relative;
+    width: 700px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .gallery img {
+    width: 750px;
+    display: block;
+  }
+  .gallery .nav {
+    position: absolute;
+    top: 98%;
+    transform: translateY(-50%);
+  }
+  .gallery .nav button {
+    cursor: pointer;
+  }
+</style>
+
+<div class="gallery">
+  <img id="current-image" src="/Rakuen/images/F-0.gif" alt="Gallery Image">
+  <p></p><br>
+  <div class="nav">
+    <button onclick="switchImage('prev')">&lt;</button>
+    <button onclick="switchImage('next')">&gt;</button>
+  </div>
+  
+</div>
+ 
+<script>
+const images = ["/Rakuen/images/F-0.gif","/Rakuen/images/F-1.gif", "/Rakuen/images/F-2.gif", "/Rakuen/images/F-3.gif", "/Rakuen/images/F-4.gif","/Rakuen/images/F-5.gif","/Rakuen/images/F-6.gif","/Rakuen/images/F-7.gif","/Rakuen/images/F-8.gif","/Rakuen/images/F-9.gif","/Rakuen/images/F-10.gif","/Rakuen/images/F-11.gif", "/Rakuen/images/F-12.gif","/Rakuen/images/F-13.gif","/Rakuen/images/F-14.gif","/Rakuen/images/F-15.gif","/Rakuen/images/F-16.gif","/Rakuen/images/F-17.gif","/Rakuen/images/F-18.gif","/Rakuen/images/F-19.gif"];
+let currentIndex = 0;
+ 
+function switchImage(direction) {
+  if (direction === 'next') {
+    currentIndex = (currentIndex + 1) % images.length;
+  } else {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+  }
+  document.getElementById('current-image').src = images[currentIndex];
+}
+</script>
+
+<p style="font-size:12px;">· 2023.02 纸质版第一次印刷</p>
 
 <hr>
-<br>
-<b><p style="color:hsl(230, 65%, 45%);">本站信息</p></b>
-<p style="font-size:14px;">另一处用于存放图像创作的荒地。<br>
-为文本构筑的角色们赋予具体样貌（人的形状）。<br>
-同样的，这些图像作品也可视作围绕某一概念进行的即兴创作，人的形象只是载体。<br>
-请以您喜好的方式随意浏览即可。</p><br>
-<b><p style="color:hsl(230, 65%, 45%);">预警事项</p></b>
-<p style="font-size:14px;">包含血液的描绘、碎片化叙事（或无叙事）以及大量作者自娱乐的neta。<br>本站一切内容仅为作者个人喜好服务。</p><br>
-<b><p style="color:hsl(230, 65%, 45%);">关于作者</p></b>
-<p style="font-size:14px;">常用署名是暮坂。<br>
-亦有罗马音、平假名、KRSK和D之类的简写，多数时候看心情而定。<br>
-那么，自我介绍就到此为止吧。</p><br>
-<br>
-<small>
-其他：<a target="_blank" rel="noopener" href="https://box.n3ko.cc/_/Kuresaka">BOX</a><br>
-Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>, <a target="_blank" rel="noopener" href="https://github.com/sunnybyeon/hexo-theme-dashed">Theme</a> by <a target="_blank" rel="noopener" href="https://github.com/sunnybyeon">sunnybyeon</a>
-</small>
+    
+    <div class="gallery">
+        
+    </div>
+    
+    <script>
+     function goBack() {
+         window.history.back();
+    }
+    </script>
 
-<hr>
+    <button onclick="goBack()" style="float: right;">返回上一页</button>
+    <br>
 
 </main>
+
+
 
         
         <footer>

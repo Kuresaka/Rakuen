@@ -193,10 +193,10 @@ main header {
 }
 main header h1 {
   margin-bottom: 5px;
-  color: #ac3939;
+  color: #2841bd;
 }
 main header div {
-  color: #afa09d;
+  color: #9d9daf;
   font-size: 14px;
 }
 main header div > * {

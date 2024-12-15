@@ -2,6 +2,7 @@ body > header {
   margin-bottom: 10px;
   font-weight: 600;
   border-bottom: 1px solid slightly-light-color;
+  float: right;
 }
 body > header ul {
   padding: 0;
