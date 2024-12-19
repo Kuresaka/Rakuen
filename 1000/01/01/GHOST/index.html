@@ -30,7 +30,7 @@
 
 <meta name="robots" content="noindex, nofollow, noarchive">
 <body oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;"></body>
-<title>Flame - RÁKUEN</title>
+<title>GHOST - RÁKUEN</title>
 
 
 <head>
@@ -83,7 +83,7 @@
     <header>
         <h1>
             
-                Flame
+                GHOST
             
         </h1>
         <div>
@@ -95,57 +95,42 @@
             </div>
         </div>
     </header>
-    <br>
-<style>
-  .gallery {
-    position: relative;
-    width: 700px;
-    margin: auto;
-    overflow: hidden;
-  }
-  .gallery img {
-    width: 750px;
-    display: block;
-  }
-  .gallery .nav {
-    position: absolute;
-    top: 98%;
-    transform: translateY(-50%);
-  }
-  .gallery .nav button {
-    cursor: pointer;
-  }
-</style>
-
-<div class="gallery">
-  <img id="current-image" src="/Rakuen/images/F-0.gif" alt="Gallery Image">
-  <p></p><br>
-  <div class="nav">
-    <button onclick="switchImage('prev')">&lt;</button>
-    <button onclick="switchImage('next')">&gt;</button>
-  </div>
-  
-</div>
- 
-<script>
-const images = ["/Rakuen/images/F-0.gif","/Rakuen/images/F-1.gif", "/Rakuen/images/F-2.gif", "/Rakuen/images/F-3.gif", "/Rakuen/images/F-4.gif","/Rakuen/images/F-5.gif","/Rakuen/images/F-6.gif","/Rakuen/images/F-7.gif","/Rakuen/images/F-8.gif","/Rakuen/images/F-9.gif","/Rakuen/images/F-10.gif","/Rakuen/images/F-11.gif", "/Rakuen/images/F-12.gif","/Rakuen/images/F-13.gif","/Rakuen/images/F-14.gif","/Rakuen/images/F-15.gif","/Rakuen/images/F-16.gif","/Rakuen/images/F-17.gif","/Rakuen/images/F-18.gif","/Rakuen/images/F-19.gif"];
-let currentIndex = 0;
- 
-function switchImage(direction) {
-  if (direction === 'next') {
-    currentIndex = (currentIndex + 1) % images.length;
-  } else {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-  }
-  document.getElementById('current-image').src = images[currentIndex];
+    <script>
+    function zoomImage(e) {
+    var img = e.target;
+    img.classList.toggle('zoomed');
 }
 </script>
-
+<br>
+<div style="text-align: center;">
+    <img src="/Rakuen/images/G-1.gif" alt="Image" onclick="zoomImage(event)" width="700px">
+    <img src="/Rakuen/images/G-2.gif" alt="Image" onclick="zoomImage(event)" width="700px">
+    <img src="/Rakuen/images/G-3.gif" alt="Image" onclick="zoomImage(event)" width="700px">
+    <img src="/Rakuen/images/G-4.gif" alt="Image" onclick="zoomImage(event)" width="700px">
+    <img src="/Rakuen/images/G-5.gif" alt="Image" onclick="zoomImage(event)" width="700px">
+    <img src="/Rakuen/images/THE-FLAME.gif" alt="Image" onclick="zoomImage(event)" width="700px">
+    <figcaption style="font-size:12px; text-align: center">纪念：未能实现印刷的扉页</figcaption>
+ </div>
+<br>
 <p style="font-size:12px;">
-  · 2023.02 纸质版第一次印刷│<sapn style="color: hsl(10, 0%, 65%);">B5 · 28p · 封面300g荷兰白卡 · 内页120g双胶纸
-</sapn></p>
+  · 2023.02 纸质版第一次印刷│<span style="color: hsl(10, 0%, 65%);">120g双胶纸</span>
+</p>
+<hr>
+<br>
+<div style="text-align: center;">
+    <img src="/Rakuen/images/T-1.gif" alt="Image" onclick="zoomImage(event)" width="800px">
+    <img src="/Rakuen/images/T-2.gif" alt="Image" onclick="zoomImage(event)" width="800px">
+    <img src="/Rakuen/images/T-3.gif" alt="Image" onclick="zoomImage(event)" width="800px">
+    <img src="/Rakuen/images/T-4.gif" alt="Image" onclick="zoomImage(event)" width="800px">
+    <figcaption style="font-size:12px; text-align: center">“我已经说过了，是永远。”</figcaption>
+ </div>
+<br>
+<p style="font-size:12px;">
+  · 2023.02 纸质版第一次印刷│<span style="color: hsl(10, 0%, 65%);">150*100mm · 330g触感哑膜</span>
+</p>
 
 <hr>
+
     
     <div class="gallery">
         

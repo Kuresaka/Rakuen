@@ -218,3 +218,8 @@ main header div div.post-tags {
 .image-container:hover img {
   filter: none;
 }
+.zoomed {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+  border: 5px solid #212121;
+}
