@@ -307,3 +307,7 @@ body {
 .image-container:hover img {
   filter: none;
 }
+::selection {
+  color: #2841bd;
+  background: #e6e6e6;
+}
