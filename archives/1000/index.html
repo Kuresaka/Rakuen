@@ -29,7 +29,97 @@
 
 
 <meta name="robots" content="noindex, nofollow, noarchive">
-<body oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;"></body>
+
+<body oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" ondragstart="return false;"></body>
+
+<script>
+        // 禁止右键菜单
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            showAlert('右键菜单已被禁用');
+        });
+ 
+        // 禁止F12开发者工具
+        document.addEventListener('keydown', function(e) {
+            // F12
+            if (e.key === 'F12') {
+                e.preventDefault();
+                showAlert('F12开发者工具已被禁用');
+            }
+            // Ctrl+U
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                showAlert('Ctrl+U查看源代码已被禁用');
+            }
+            // Ctrl+S
+            if (e.ctrlKey && e.key === 's') {
+                e.preventDefault();
+                showAlert('Ctrl+S保存网页已被禁用');
+            }
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.key === 'i') {
+                e.preventDefault();
+                showAlert('Ctrl+Shift+I开发者工具已被禁用');
+            }
+            // Ctrl+Shift+C
+            if (e.ctrlKey && e.shiftKey && e.key === 'c') {
+                e.preventDefault();
+                showAlert('Ctrl+Shift+C元素选择器已被禁用');
+            }
+        });
+ 
+        // 监测开发者工具是否打开（通过监测窗口尺寸变化）
+        let devtoolsOpen = false;
+        let lastInnerWidth = window.innerWidth;
+        let lastInnerHeight = window.innerHeight;
+ 
+        setInterval(function() {
+            if (
+                (window.innerWidth !== lastInnerWidth && Math.abs(window.innerWidth - lastInnerWidth) > 100) ||
+                (window.innerHeight !== lastInnerHeight && Math.abs(window.innerHeight - lastInnerHeight) > 100)
+            ) {
+                devtoolsOpen = true;
+                showAlert('检测到开发者工具已打开');
+                document.body.innerHTML = '<div class="fixed inset-0 bg-dark flex items-center justify-center text-white text-xl font-bold">检测到开发者工具已打开，请关闭后继续访问。</div>';
+            }
+            lastInnerWidth = window.innerWidth;
+            lastInnerHeight = window.innerHeight;
+        }, 1000);
+ 
+        // 测试按钮功能
+        document.getElementById('testButton').addEventListener('click', function() {
+            document.getElementById('testResult').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('testResult').classList.add('hidden');
+            }, 3000);
+        });
+ 
+        // 显示警告提示
+        function showAlert(message) {
+            // 创建提示元素
+            const alertBox = document.createElement('div');
+            alertBox.className = 'fixed top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-md shadow-lg z-50 transform transition-all duration-300 opacity-0 translate-y-[-20px]';
+            alertBox.textContent = message;
+            
+            // 添加到页面
+            document.body.appendChild(alertBox);
+            
+            // 显示动画
+            setTimeout(() => {
+                alertBox.classList.remove('opacity-0', 'translate-y-[-20px]');
+            }, 10);
+            
+            // 3秒后隐藏
+            setTimeout(() => {
+                alertBox.classList.add('opacity-0', 'translate-y-[-20px]');
+                setTimeout(() => {
+                    document.body.removeChild(alertBox);
+                }, 300);
+            }, 3000);
+        }
+    </script>
+
+
 <title>Archives - RÁKUEN</title>
 
 
@@ -104,6 +194,32 @@
             1000-01-01
         
     </span>
+    <a class="post-title" href="/Rakuen/1000/01/01/8MM.2/"
+        ><span class="hover-text">Into Ashko</span></a
+    >
+</li>
+
+    
+        
+            <li>
+    <span class="side-info">
+        
+            1000-01-01
+        
+    </span>
+    <a class="post-title" href="/Rakuen/1000/01/01/Flame.2/"
+        ><span class="hover-text">Flame</span></a
+    >
+</li>
+
+    
+        
+            <li>
+    <span class="side-info">
+        
+            1000-01-01
+        
+    </span>
     <a class="post-title" href="/Rakuen/1000/01/01/Flame/"
         ><span class="hover-text">Flame</span></a
     >
@@ -117,8 +233,8 @@
             1000-01-01
         
     </span>
-    <a class="post-title" href="/Rakuen/1000/01/01/GHOST/"
-        ><span class="hover-text">GHOST</span></a
+    <a class="post-title" href="/Rakuen/1000/01/01/PART.1/"
+        ><span class="hover-text">PART.1</span></a
     >
 </li>
 
@@ -130,8 +246,8 @@
             1000-01-01
         
     </span>
-    <a class="post-title" href="/Rakuen/1000/01/01/PART.1/"
-        ><span class="hover-text">PART.1</span></a
+    <a class="post-title" href="/Rakuen/1000/01/01/GHOST/"
+        ><span class="hover-text">GHOST</span></a
     >
 </li>
 
