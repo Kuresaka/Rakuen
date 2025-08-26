@@ -51,11 +51,6 @@
                 e.preventDefault();
                 showAlert('Ctrl+U查看源代码已被禁用');
             }
-            // Ctrl+S
-            if (e.ctrlKey && e.key === 's') {
-                e.preventDefault();
-                showAlert('Ctrl+S保存网页已被禁用');
-            }
             // Ctrl+Shift+I
             if (e.ctrlKey && e.shiftKey && e.key === 'i') {
                 e.preventDefault();
@@ -115,7 +110,7 @@
                 setTimeout(() => {
                     document.body.removeChild(alertBox);
                 }, 300);
-            }, 3000);
+            }, 2000);
         }
     </script>
 
